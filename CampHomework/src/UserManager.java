@@ -1,12 +1,12 @@
 
-public class UserManager {
+public interface UserManager {
 	
-	public void login(User user) {
-		System.out.println(user.getFirstName() +" Başarıyla Giriş Yaptın!!");
-	}
+	void  login(User user);
+
+	void register(User user);	
 	
-	
-	public void register(User user) {
-		System.out.println(user.getFirstName() +" Başarıyla Üye Oldunuz!!");
+	default void deneme(Student student) {
+		register(student);
+		
 	}
 }

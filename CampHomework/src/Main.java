@@ -18,10 +18,11 @@ public class Main {
 		instructor1.setSalary("23000");
 		
 		
-		UserManager userManager = new UserManager();
+		UserManager userManager = new StudentManager();
 		userManager.register(student1);
 		
-		userManager.register(instructor1);
+		UserManager userManager2 = new InstructorManager();
+		userManager2.register(instructor1);
 		
 	}
 

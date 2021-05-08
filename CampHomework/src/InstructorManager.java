@@ -1,5 +1,5 @@
 
-public class InstructorManager extends UserManager{
+public class InstructorManager implements UserManager{
 
 	public void showSalary(Instructor instructor) {
 		System.out.println("Maaşınız: " + instructor.getSalary());
